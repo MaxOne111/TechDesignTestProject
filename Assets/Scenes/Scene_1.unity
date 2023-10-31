@@ -746,6 +746,7 @@ GameObject:
   - component: {fileID: 764974880}
   - component: {fileID: 764974879}
   - component: {fileID: 764974883}
+  - component: {fileID: 764974884}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -849,6 +850,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df7111fc8105756428b282eefe561c2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &764974884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764974878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05628f7b9a64ed744917f84bc77645a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1128997977
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,7 +945,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1128997980}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 764974884}
+        m_TargetAssemblyTypeName: GameQuit, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1128997980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1374,7 +1399,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 230397699783139493, guid: 0b86154117a68da4a9f8a42c5c24485b, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 230397699783139493, guid: 0b86154117a68da4a9f8a42c5c24485b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1431,7 +1456,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2043543292246450533}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6960420486127971107, guid: 8f1da3a759fbd184b925d7cbebd21c3b, type: 3}
       propertyPath: m_Name
@@ -1439,7 +1464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6960420486128235459, guid: 8f1da3a759fbd184b925d7cbebd21c3b, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6960420486128235459, guid: 8f1da3a759fbd184b925d7cbebd21c3b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1544,11 +1569,6 @@ PrefabInstance:
       objectReference: {fileID: 1857874655}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bdef77ab6faaef418aba5811168831e, type: 3}
---- !u!4 &2043543292246450533 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2043543292579950633, guid: 4bdef77ab6faaef418aba5811168831e, type: 3}
-  m_PrefabInstance: {fileID: 2043543292246450532}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9025795094655721856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1566,7 +1586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9025795093271470562, guid: ee2f9494ad49acd4791e8ff449a80db7, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9025795093271470562, guid: ee2f9494ad49acd4791e8ff449a80db7, type: 3}
       propertyPath: m_LocalPosition.x
